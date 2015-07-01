@@ -10,4 +10,8 @@ describe Api::V1::RestaurantsController do
       expect(restaurants.first[:name]).to eq("Pho Saigon")
     end
   end
+
+  describe "#show" do
+
+  end
 end
