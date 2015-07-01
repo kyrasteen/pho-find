@@ -5,6 +5,11 @@ class Api::V1::FavoritesController < ApplicationController
     respond_with :api, :v1, Favorite.create(favorite_params)
   end
 
+  def destroy
+    Favorite.delete(params[:id].to_i)
+    head :ok
+  end
+
   private
 
   def favorite_params

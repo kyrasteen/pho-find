@@ -3,18 +3,21 @@
     "name": "Pho Saigon",
     "description": "great food",
     "address": "Greenwood Village, Kindercare, 9555 E Arapahoe Rd, GreenWood Village, CO",
-    "phone": "7208738899"
+    "phone": "7208738899",
+    "image_url": "default.jpg"
   },
   {
     "name": "Pho 79",
     "description": "decent pho, best egg rolls around",
     "address": "781 S Federal Blvd, Denver, CO 80219",
-    "phone": "3039222930"
+    "phone": "3039222930",
+    "image_url": "pho_79.jpg"
   },
   {
     "name": "Pho Duy",
     "description": "Decent pho, but amazing cold noodles",
     "address":  "945 S Federal Blvd, Denver, CO 80219",
-    "phone": "3039371609"
+    "phone": "3039371609",
+    "image_url": "pho_duy.jpg"
   }
 ]
