@@ -2,11 +2,11 @@ class Api::V1::FavoritesController < ApplicationController
   respond_to :json
 
   def index
-    respond_with Favorite.all
+    respond_with current_user.favorites.all
   end
 
   def create
-    respond_with :api, :v1, Favorite.create(favorite_params)
+    respond_with :api, :v1, current_user.favorites.create(favorite_params)
   end
 
   def destroy
@@ -17,6 +17,6 @@ class Api::V1::FavoritesController < ApplicationController
   private
 
   def favorite_params
-    params.require(:favorite).permit(:restaurant_id)
+    params.require(:favorite).permit(:user_id, :restaurant_id)
   end
 end
